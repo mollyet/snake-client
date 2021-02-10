@@ -16,6 +16,18 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Successssfully Connected to Sssnek Ssserver");
     conn.write("Name: MET")
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    //   conn.write("Move: left");
+    //   conn.write("Move: up");
+    //   conn.write("Move: right");
+    //   conn.write("Move: right");
+    //   conn.write("Move: right");
+    //   conn.write("Move: right");
+    //   conn.write("Move: right");
+    //   conn.write("Move: down");
+    //   conn.write("Move: up");
+    // }, 100)
   });
   conn.on('data', (data) => {
     console.log('Server says: ', data);
