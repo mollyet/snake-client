@@ -13,6 +13,10 @@ const connect = function() {
   });
   // interprets incoming data as text
   conn.setEncoding('utf8');
+  conn.on("connect", () => {
+    console.log("Successssfully Connected to Sssnek Ssserver");
+    conn.write("Name: MET")
+  });
   conn.on('data', (data) => {
     console.log('Server says: ', data);
   });
