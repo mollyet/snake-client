@@ -1,4 +1,5 @@
 const net = require('net');
+const { IP, PORT } = require("./constants")
 /**
  * 
  * Sets up cxn to lhl server
@@ -8,8 +9,8 @@ const net = require('net');
  */
 const connect = function() {
   const conn = net.createConnection({
-    host: '135.23.222.131',
-    port: 50542
+    host: IP,
+    port: PORT
   });
   // interprets incoming data as text
   conn.setEncoding('utf8');
