@@ -14,7 +14,7 @@ const connect = function() {
   // interprets incoming data as text
   conn.setEncoding('utf8');
   conn.on("connect", () => {
-    console.log("Successssfully Connected to Sssnek Ssserver");
+    console.log("Sssuccessssfully Connected to Sssnek Ssserver");
     conn.write("Name: MET")
     // setTimeout(() => {
     //   conn.write("Move: up");
